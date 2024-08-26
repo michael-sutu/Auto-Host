@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Auto Host</title>
+        <link rel="icon" href="./files/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/files/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme&family=Poppins:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0fc9577f47.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="view">
+            <div class="loading">
+                <div class="spinner"></div>
+            </div>
+            <nav class="solid">
+                <img src="./files/logo.png">
+                <button id="logoutBtn">Logout</button>
+            </nav>
+            <div class="sideNav">
+                <h3 class="propertyBtn"><i class="fa-solid fa-house"></i>Properties</h3>
+            </div>
+            <div class="propertiesDiv">
+                <button id="createBtn">+ Add Property</button><br>
+                <div class="list">
+                    <p>You havn't added any properties yet.</p>
+                </div>
+            </div>
+            <div class="newProperty">
+                <div class="authcontainer">
+                    <div class="authDiv">
+                        <h2>New Property</h2>
+                        <div class="input-container">
+                            <div>
+                                <label for="name">Property Name</label><br>
+                                <input name="name" id="nameInput" placeholder="My Property">
+                            </div>
+                            <div>
+                                <label for="address">Property Address</label><br>
+                                <input name="address" id="addressInput" placeholder="123 Main Street">
+                            </div>
+                        </div>
+                        <br>
+                        <label for="info">Property Information</label>
+                        <input type="file" id="fileInput" style="display: none;" accept=".pdf">
+                        <button id="pdfBtn">+</button>
+                        <div class="externalList" style="margin-top: 25px; display: none;"></div><br>
+                        <textarea id="informationInput" placeholder="Add information that answers commonly asked questions..."></textarea><br>
+                        <button id="cancelBtn" class="smaller">Cancel</button>
+                        <button id="saveBtn" class="smaller">Save</button>
+                    </div>
+                </div>
+            </div>            
+            <div class="chatDiv">
+                <h3 id="chatName"></h3>
+                <h4>Propery: <select><option selected="true">Unselected</option></select><button id="shadowBtn" style="display: none;">Shadow Mode</button></h4>
+                <div class="messageDiv"></div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+        <script src="./files/script.js"></script>
+    </body>
+</html>
