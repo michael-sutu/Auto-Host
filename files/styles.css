@@ -1,0 +1,473 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero {
+    background: linear-gradient(151deg, #f8f9fa, #d0e6fc);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+
+.hero img {
+    position: absolute;
+    width: 55%;
+    top: 190px;
+    right: 60px;
+    border-radius: 25px;
+    box-shadow: 20px 20px 11px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.hero h2 {
+    position: absolute;
+    color: rgba(10, 10, 10);
+    top: 220px;
+    left: 85px;
+    width: 30%;
+    font-size: 2.6rem;
+    text-align: left;
+}
+
+.hero h2 span {
+    color: #28a745;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-width: 0px;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+nav button {
+    position: relative;
+    right: 60px;
+    background-color: #4ca2f7;
+    padding: 10px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+nav button:hover {
+    background-color: #3298ff;
+}
+
+nav img {
+    height: 50px;
+    float: left;
+    position: relative;
+    left: 10px;
+}
+
+nav {
+    text-align: right;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.solid {
+    background-color: rgba(245, 245, 245)!important;
+}
+
+.authDiv {
+    position: relative;
+    top: 20vh;
+    padding: 40px 50px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 11px 0px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-align: left;
+}
+
+.authcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.input-container input {
+    max-width: 177px;
+}
+
+.smaller {
+    padding: 10px 85px!important;
+}
+
+.authDiv input {
+    border-width: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    right: 5px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.authDiv > button {
+    background-color: #4ca2f7;
+    color: white;
+    padding: 10px 110px;
+    border-radius: 8px;
+    position: relative;
+    right: 5px;
+}
+
+.authDiv button:hover {
+    background-color: #3298ff;
+}
+
+input {
+    background-color: #0B0B0B;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin: 5px;
+    width: 15vw;
+}
+
+.view {
+    display: none;
+}
+
+.propertyBtn {
+    background-color: white!important;
+    color: black;
+}
+
+.propertyBtn:hover {
+    background-color: rgb(220, 220, 220)!important;
+    color: black!important;
+}
+
+.sideNav {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 16%;
+    left: 0%;
+    height: 100%;
+    top: 0%;
+}
+
+.sideNav > h3 {
+    width: 90%;
+    background-color: #4ca2f73d!important;
+    position: relative;
+    left: 5%;
+    padding: 10px 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 110px;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(10, 10, 10);
+}
+
+h3 i {
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+.sideNav > h3:hover {
+    background-color: #4ca2f73d!important;
+}
+
+.sideNav > p {
+    text-align: left;
+    position: relative;
+    left: 7%;
+    color: grey;
+    border-bottom: 1px solid grey;
+    width: 85%;
+}
+
+.propertiesDiv {
+    position: absolute;
+    top: 115px;
+    left: 16%;
+    width: 84%;
+    height: 97%;
+    text-align: left;
+}
+
+#createBtn {
+    font-size: 15px;
+    padding: 10px 35px;
+    background-color: #4ca2f7;
+    color: white;
+    border-radius: 8px;
+    margin-left: 30px;
+}
+
+#createBtn:hover {
+    background-color: #3298ff;
+}
+
+.list {
+    width: 95%;
+    left: 2.5%;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 40px;
+    background-color: white;
+}
+
+.propertyDiv {
+    background-color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 10px;
+}
+
+.propertyDiv > p {
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.propertyDiv i {
+    cursor: pointer;
+    padding: 0 10px;
+    color: rgb(10, 10, 10);
+}
+
+.propertiesDiv i:hover {
+    color: rgb(60, 60, 60);
+}
+
+.chatBtn {
+    background-color: #0B0B0B!important;
+    text-align: left;
+}
+
+.chatDiv {
+    position: absolute;
+    top: 60px;
+    left: 16%;
+    width: 84%;
+    height: 97%;
+    display: none;
+    text-align: left;
+}
+
+.newProperty {
+    display: none;
+    position: relative;
+    top: -25px;
+}
+
+.newProperty input {
+    position: relative;
+    top: 5px;
+}
+
+.newProperty > h3 {
+    font-size: 35px;
+}
+
+textarea {
+    border-width: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    top: 5px;
+    margin-bottom: 20px;
+    color: black;
+    width: 400px;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+    width: 15vw;
+}
+
+option {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 5px;
+    width: 15vw;
+}
+
+#cancelBtn {
+    background-color: red;
+    color: white;
+}
+
+.newProperty > button {
+    margin: 5px 0px 5px 5px;
+}
+
+.chatDiv > h3 {
+    font-size: 28px;
+}
+
+.chatDiv > * {
+    margin: 35px 0px 0px 35px;
+}
+
+.chatDiv > h5 {
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+}
+
+h4 > input {
+    border-color: green;
+}
+
+.messageDiv {
+    display: flow-root;
+    width: 90%;
+    overflow: auto;
+    height: 70%;
+    padding-right: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+  
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #0B0B0B;
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(220, 220, 220);
+}
+
+.message > * {
+    font-size: 2vh;
+    padding: 2vw 1.5vw;
+    text-align: left;
+    background-color: white; 
+    color: white;
+    margin-bottom: -18px;
+}
+
+.externalList > a {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.externalList > a:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.message > h3 {
+    width: 100%;
+    background-color: #171717!important;
+}
+
+.message > h2 {
+    background-color: #222222!important;
+    width: 100%;
+    text-align: right;
+}
+
+.message {
+    display: flow-root;
+}
+
+.loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(245, 245, 245);
+    z-index: 10;
+}
+
+.spinner {
+    border: 16px solid #4ca2f7;
+    border-top: 16px solid rgb(245, 245, 245);
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    left: 42.5vw;
+    top: 42.5vh;
+    position: absolute;
+    animation: spin 0.6s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#pdfBtn {
+    padding: 0px;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
